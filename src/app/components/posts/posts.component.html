@@ -1,0 +1,20 @@
+<div class="card-container">
+  @if(isLoading$ | async) {
+    @for(post of emptyPosts; track $index) {
+      <app-card-skeleton data-testid="card-skeleton"/>
+    }
+  }
+  @if(error$ | async; as error) {
+    <div data-testid="error">{{error}}</div>
+  }
+  @if(posts$ | async; as posts) {
+    @for(post of posts; track $index) {
+      <app-post-card
+        [post]="post"
+        (toggleEvent)="toggleContent($event)"
+        data-testid="post-card"
+      />
+    }
+  }
+</div>
+ 

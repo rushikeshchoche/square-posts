@@ -1,0 +1,9 @@
+@if(post.id !== -1){
+  <div class="post-card" (click)="onPostClick(post.id)" data-testid="post-card-content">
+    <div class="post-content">
+      {{post[post.contentKey]}}
+    </div>
+  </div>
+} @else {
+  <div data-testid="post-card-error">Something went wrong!</div>
+}

@@ -1,0 +1,12 @@
+<div class='header'>
+  <h3 data-testid="posts-title">POSTS</h3>
+  <div data-testid="active-post-id">
+    @if((activePost$ | async)?.id; as id){
+      @if(id !== -1) {
+        Current active post Id: {{id}}
+      } @else {
+        No post clicked!
+      }
+    }
+  </div>
+</div>
