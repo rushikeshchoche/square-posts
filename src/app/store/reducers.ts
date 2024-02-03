@@ -2,7 +2,7 @@ import { createFeature, createReducer, on } from '@ngrx/store';
 import { AppStateInterface } from '../types/appState.interface';
 import { postActions } from './actions';
 import { postKeys } from '../types/post.interface';
-import { getNextContentKey } from '../utils/helper';
+import { computeContentKey, getNextContentKey } from '../utils/helper';
 
 const initialState: AppStateInterface = {
   isLoading: false,
@@ -43,12 +43,7 @@ const postFeature = createFeature({
       ...state,
       posts: state.posts.map((post) => ({
         ...post,
-        contentKey:
-          post.id === id
-            ? getNextContentKey(post) // Set next contentKey for current post
-            : post.id === state.activePost.id
-            ? postKeys.title // Reset previous post to its default content
-            : post.contentKey,
+        contentKey: computeContentKey(post, id, state.activePost.id),
       })),
       activePost:
         state.posts.find((post) => post.id === id) || initialState.activePost,
