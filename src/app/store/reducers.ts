@@ -25,9 +25,9 @@ const postFeature = createFeature({
       isLoading: true,
       error: null,
     })),
-    on(postActions.getPostsSuccess, (state, action) => ({
+    on(postActions.getPostsSuccess, (state, { posts }) => ({
       ...state,
-      posts: action.posts.map((post) => ({
+      posts: posts.map((post) => ({
         ...post,
         contentKey: postKeys.title, // Set title as default content
       })),
@@ -39,14 +39,19 @@ const postFeature = createFeature({
       isLoading: false,
       error: 'Something went wrong!!',
     })),
-    on(postActions.toggleContent, (state, action) => ({
+    on(postActions.toggleContent, (state, { id }) => ({
       ...state,
       posts: state.posts.map((post) => ({
         ...post,
         contentKey:
-          post.id === action.id ? getNextContentKey(post) : postKeys.title, // Reset content to title
+          post.id === id
+            ? getNextContentKey(post) // Set next contentKey for current post
+            : post.id === state.activePost.id
+            ? postKeys.title // Reset previous post to its default content
+            : post.contentKey,
       })),
-      activePost: state.posts.filter((post) => post.id === action.id)[0],
+      activePost:
+        state.posts.find((post) => post.id === id) || initialState.activePost,
       isLoading: false,
       error: null,
     }))
