@@ -2,7 +2,7 @@ import { createFeature, createReducer, on } from '@ngrx/store';
 import { AppStateInterface } from '../types/appState.interface';
 import { postActions } from './actions';
 import { postKeys } from '../types/post.interface';
-import { computeContentKey, getNextContentKey } from '../utils/helper';
+import { computeContentKey } from '../utils/helper';
 
 const initialState: AppStateInterface = {
   isLoading: false,

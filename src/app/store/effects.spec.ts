@@ -24,15 +24,15 @@ describe('postEffect', () => {
     });
   });
 
-  /* it('loads posts failed', (done) => {
+  it('loads posts failed', (done) => {
     const postsServiceMock = {
       getPosts: () => throwError(() => new Error('error')),
-    };
+    } as unknown as PostService;
     const actionsMock$ = of(postActions.getPosts());
 
-    postEffect(actionsMock$, postsServiceMock as PostService).subscribe((action) => {
+    postEffect(actionsMock$, postsServiceMock).subscribe((action) => {
       expect(action).toEqual(postActions.getPostsFailure());
       done();
     });
-  }); */
+  });
 });

@@ -1,17 +1,16 @@
+@import "../../../styles.scss";
+
 .post-card {
-  padding: 0.8rem;
+  padding: 0.8rem 0.8rem 0;
   aspect-ratio: 1;
-  background-color: #fff;
+  background-color: $white-color;
   cursor: pointer;
   text-align: center;
   user-select: none;
   border-radius: 0.5rem;
+  border-bottom: 0.8rem solid $white-color;
   box-shadow: 0 2px 4px rgb(0 0 0 / 0.2);
-  overflow: hidden; 
-  //text-overflow: ellipsis; 
-  /* display: flex; 
-  flex-direction: row;  */
-
+  overflow: hidden;
   
   &:hover {
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.6);

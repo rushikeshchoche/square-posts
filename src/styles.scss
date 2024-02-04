@@ -1,5 +1,12 @@
+$primary-color: #ff0000;
+$secondary-color: #00ff00;
+$white-color: #fff;
+$background-color: #383838;
+$body-background-color: #d1dcd5;
+$font-family: 'Segoe UI';
+
 body {
   margin: 0;
-  font-family: 'Segoe UI';
-  background-color: #d1dcd5;
+  font-family: $font-family;
+  background-color: $body-background-color;
 }

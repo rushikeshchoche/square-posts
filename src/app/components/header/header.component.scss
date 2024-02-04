@@ -1,11 +1,13 @@
-.header {
+@import "../../../styles.scss";
+
+header {
   margin-bottom: 1rem;
   padding: 0.5em;
   text-align: center;
   position: sticky;
   top: 0;
-  background-color: #383838;
-  color: #fff;
+  background-color: $background-color;
+  color: $white-color;
 
   h3 {
     margin: 0.5rem 0;
