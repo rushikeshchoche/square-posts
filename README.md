@@ -42,17 +42,17 @@ These are the commands defined in `package.json`:
 * `npm run watch` - Builds the app in "watch mode"; when changes occur to source files, they will be recompiled or copied into `dist/`.
 * `npm test` - Executes the unit tests via [Jest](https://jestjs.io/).
 
+### Answers for the given questions in assignment:
 
-Answers for the given questions in assignment:
-
-1. 
-  The given JWT token has all 3 sections - header, payload and verified signature.
-  The payload consists only 3 claims - 'sub', 'admin' and 'valid_until'. However a standard JWT token must have below claims
-  'iss' - issuer of the JWT
-  'iat' - issued at
-  'exp' - expiration time
-  'aud' - Audience
-  So the token is not safe to use as it is missing above claims.
+1. ---
+   The given JWT token has all 3 sections - header, payload and verified signature.
+   The payload consists only 3 claims - 'sub', 'admin' and 'valid_until'. However a standard JWT token must have below claims
+    * 'iss' - issuer of the JWT
+    * 'iat' - issued at
+    * 'exp' - expiration time
+    * 'aud' - Audience
+   So the token is not safe to use as it is missing above claims.
+   ---
 
 2. 
   Cross Site Scripting XSS - Bad Actors can insert malicious scripts embedded in HTML email content that will be executed when receipent opens their email.
