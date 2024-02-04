@@ -57,33 +57,33 @@ These are the commands defined in `package.json`:
 
 2. Two attack vectors bad actors:
 
-  * Cross Site Scripting XSS - Bad Actors can insert malicious scripts embedded in HTML email content that will be execute when receipent opens their email. To prevent XSS we can do following:
-    - Encode HTML tags, Validate inputs.
-    - Using content security policy (CSP) - To enable CSP, We can configure our web server to return the Content-Security-Policy HTTP header.
+    * Cross Site Scripting XSS - Bad Actors can insert malicious scripts embedded in HTML email content that will be execute when receipent opens their email. To prevent XSS we can do following:
+      - Encode HTML tags, Validate inputs.
+      - Using content security policy (CSP) - To enable CSP, We can configure our web server to return the Content-Security-Policy HTTP header.
 
-  * Phishing attack - Bad Actors can attempt to steal sensitive information via malware links in email. To prevent phishing:
-    - Exercise caution when opening emails or clicking on links, if they seem to be from unknown or external senders.
-    - Avoid downloading attachments unless they from trusted sources or known senders.
-    - Add multi-factor authentication to protect accounts from getting hacked.
+    * Phishing attack - Bad Actors can attempt to steal sensitive information via malware links in email. To prevent phishing:
+      - Exercise caution when opening emails or clicking on links, if they seem to be from unknown or external senders.
+      - Avoid downloading attachments unless they from trusted sources or known senders.
+      - Add multi-factor authentication to protect accounts from getting hacked.
 
 3. Mutable objects are objects that can be changed after they are created, while immutable are objects that cannot be     changed after creation.
-  * Arrays, Objects, functions and dates are mutable in javaScript.
-  * All primitive types: strings, numbers, booleans, null and undefined are immutable in javaScript.
-  * Object.freeze() creates immutable object in javaScript. This prevent adding, updating or removing existing properties.
-  * Pros of using immutable object are: It avoids side effects. This can lead to more predictable code, easier debugging, and better performance.
-  * Cons of using immutable object are: It increases memory comsumption. This also affects the garbage collection, which is the process of freeing up memory from unused objects.
+    * Arrays, Objects, functions and dates are mutable in javaScript.
+    * All primitive types: strings, numbers, booleans, null and undefined are immutable in javaScript.
+    * Object.freeze() creates immutable object in javaScript. This prevent adding, updating or removing existing properties.
+    * Pros of using immutable object are: It avoids side effects. This can lead to more predictable code, easier debugging, and better performance.
+    * Cons of using immutable object are: It increases memory comsumption. This also affects the garbage collection, which is the process of freeing up memory from unused objects.
 
-  * To achieve immutability
-    - We should use const instead of let while creating variables.
-    - Should use spread operators to return new objects instead of modifying existing objects.
-    - Use array functions that returns new arrays such as map, filter.
+    * To achieve immutability
+      - We should use const instead of let while creating variables.
+      - Should use spread operators to return new objects instead of modifying existing objects.
+      - Use array functions that returns new arrays such as map, filter.
 
 4. Steps to speed up the loading of a web-application:
-  * Implement lazy loading
-  * Optimizing images
-  * Code spliting and minifying js and css files
-  * Limiting number of HTTP calls on page load
-  * Caching static files
+    * Implement lazy loading
+    * Optimizing images
+    * Code spliting and minifying js and css files
+    * Limiting number of HTTP calls on page load
+    * Caching static files
 
 5. I feel choosing own hardware provides me flexibility and customization as I can set up my own work environment in a way that suits my preference. This can contribute to increased productivity and efficiency.Using company supplied operating system can ensure standardization across the organization. Software updates, security patches, and configurations can be deployed by IT departments. This will ensure that all devices meet certain security standards and compliance requirements.
 
