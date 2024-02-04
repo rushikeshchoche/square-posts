@@ -6,11 +6,13 @@ This Angular application fetch posts and render them as squares.
 
 The application allows users to click on single post square to change its content. It also resets previous post square to title content as default state.
 
-In this project NgRx state management is used to store all posts and active post.
-It also has Store devtools which makes easier to watch actions and debug state in Chrome's developers tool Redux tab(This is available after adding [Redux Devtools chrome extension](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)).
-Currently only one default route is added to show Posts. In future, additional routes can be added to app.routes.ts.
-The app also uses scss styling with color variables defined in styles.css
-This app has few unit tests and e2e tests which covers basic post click functionality.
+  * In this project NgRx state management is used to store all posts and active post.
+  * It also has Store devtools which makes easier to watch actions and debug state in Chrome's developers tool Redux tab(This is available after adding [Redux Devtools chrome extension](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)).
+  * Currently only one default route is added to show Posts. In future, additional routes can be added to app.routes.ts.
+  * The app also uses scss styling with color variables defined in styles.css
+  * This app has few unit tests and e2e tests which covers basic post click functionality.
+
+![Posts_State_Lifecycle](Posts_state_lifecycle.drawio.png)
 
 ## Get started
 
