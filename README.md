@@ -63,7 +63,7 @@ These are the commands defined in `package.json`:
 
     * Phishing attack - Bad Actors can attempt to steal sensitive information via malware links in email. To prevent phishing:
       - Exercise caution when opening emails or clicking on links, if they seem to be from unknown or external senders.
-      - Avoid downloading attachments unless they from trusted sources or known senders.
+      - Avoid downloading attachments unless they are from trusted sources or known senders.
       - Add multi-factor authentication to protect accounts from getting hacked.
 
 3. Mutable objects are objects that can be changed after they are created, while immutable are objects that cannot be     changed after creation.
