@@ -10,6 +10,7 @@ In this project NgRx state management is used to store all posts and active post
 It also has Store devtools which makes easier to watch actions and debug state in Chrome's developers tool Redux tab(This is available after adding [Redux Devtools chrome extension](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)).
 Currently only one default route is added to show Posts. In future, additional routes can be added to app.routes.ts.
 The app also uses scss styling with color variables defined in styles.css
+This app has few unit tests and e2e tests which covers basic post click functionality.
 
 ## Get started
 
@@ -41,6 +42,8 @@ These are the commands defined in `package.json`:
 * `npm run build` - Builds the app. The build artifacts will be stored in the `dist/` directory.
 * `npm run watch` - Builds the app in "watch mode"; when changes occur to source files, they will be recompiled or copied into `dist/`.
 * `npm test` - Executes the unit tests via [Jest](https://jestjs.io/).
+* `npm run cypress:open` - Opens Cypress Launchpad
+* `npm run cypress:run` - Executes the e2e tests.
 
 ---
 ### Answers for the given questions in assignment:
