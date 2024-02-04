@@ -44,6 +44,7 @@ These are the commands defined in `package.json`:
 
 
 Answers for the given questions in assignment:
+
 1. 
   The given JWT token has all 3 sections - header, payload and verified signature.
   The payload consists only 3 claims - 'sub', 'admin' and 'valid_until'. However a standard JWT token must have below claims
