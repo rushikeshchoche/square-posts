@@ -1,3 +1,5 @@
+declare const expect: jest.Expect;
+
 import { PostInterface } from '../types/post.interface';
 import { postActions } from './actions';
 

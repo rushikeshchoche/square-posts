@@ -1,3 +1,5 @@
+declare const expect: jest.Expect;
+
 import { computeContentKey, getNextContentKey } from './helper';
 import { PostWithContentKey, postKeys } from '../types/post.interface';
 

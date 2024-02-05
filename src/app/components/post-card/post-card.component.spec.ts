@@ -1,5 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+declare const expect: jest.Expect;
 
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PostCardComponent } from './post-card.component';
 import { By } from '@angular/platform-browser';
 import { postKeys } from '../../types/post.interface';

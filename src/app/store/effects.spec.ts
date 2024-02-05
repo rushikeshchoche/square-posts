@@ -1,3 +1,5 @@
+declare const expect: jest.Expect;
+
 import { of, throwError } from 'rxjs';
 import { postEffect } from './effects';
 import { postActions } from './actions';

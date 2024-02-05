@@ -1,3 +1,5 @@
+declare const expect: jest.Expect;
+
 import { AppStateInterface } from '../types/appState.interface';
 import { PostWithContentKey, postKeys } from '../types/post.interface';
 import { postActions } from './actions';

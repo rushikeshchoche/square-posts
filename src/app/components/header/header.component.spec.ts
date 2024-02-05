@@ -1,3 +1,5 @@
+declare const expect: jest.Expect;
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockStore, provideMockStore } from '@ngrx/store/testing';
 

@@ -1,5 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+declare const expect: jest.Expect;
 
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CardSkeletonComponent } from './card-skeleton.component';
 
 describe('CardSkeletonComponent', () => {
@@ -8,10 +9,9 @@ describe('CardSkeletonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardSkeletonComponent]
-    })
-    .compileComponents();
-    
+      imports: [CardSkeletonComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CardSkeletonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
