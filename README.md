@@ -12,7 +12,9 @@ The application allows users to click on single post square to change its conten
   * The app also uses scss styling with color variables defined in styles.css
   * This app has few unit tests and e2e tests which covers basic post click functionality.
 
-![Posts_State_Lifecycle](Posts_state_lifecycle.drawio.png)
+  Below is the state lifecycle diagram:
+
+  ![Posts_State_Lifecycle](Posts_state_lifecycle.drawio.png)
 
 ## Get started
 
