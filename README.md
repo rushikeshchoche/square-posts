@@ -92,6 +92,6 @@ These are the commands defined in `package.json`:
     * Limiting number of HTTP calls on page load
     * Caching static files
 
-5. I feel choosing own hardware provides me flexibility and customization as I can set up my own work environment in a way that suits my preference. This can contribute to increased productivity and efficiency.Using company supplied operating system can ensure standardization across the organization. Software updates, security patches, and configurations can be deployed by IT departments. This will ensure that all devices meet certain security standards and compliance requirements.
+5. I feel choosing own hardware provides me flexibility and customization as I can set up my own work environment in a way that suits my preference. This can contribute to increased productivity and efficiency. Using company supplied operating system can ensure standardization across the organization. Software updates, security patches, and configurations can be deployed by IT departments. This will ensure that all devices meet certain security standards and compliance requirements.
 
 ---
