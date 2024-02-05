@@ -1,5 +1,5 @@
 @if(post.id !== -1){
-  <div class="post-card" (click)="onPostClick(post.id)" data-testid="post-card-content">
+  <div class="post-card" (click)="onPostClick(post.id)" (keydown)="onPostClick(post.id)" data-testid="post-card-content" tabindex="0">
     <div class="post-content">
       {{post[post.contentKey]}}
     </div>
