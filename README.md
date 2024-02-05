@@ -34,7 +34,7 @@ npm install
 npm start
 ```
 
-The `npm start` command builds the application into `dist/`, watches for changes to the source files, and runs on port `4200`.
+The `npm start` runs the application with watch mode on port `4200`.
 
 Shut it down manually with `Ctrl+C`.
 
