@@ -48,6 +48,7 @@ These are the commands defined in `package.json`:
 * `npm test` - Executes the unit tests via [Jest](https://jestjs.io/).
 * `npm run cypress:open` - Opens Cypress Launchpad
 * `npm run cypress:run` - Executes the e2e tests.
+* `npm run lint` - Runs linting.
 
 ---
 ### Answers for the given questions in assignment:
