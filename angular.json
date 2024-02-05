@@ -122,6 +122,15 @@
               "devServerTarget": "posts-app:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
@@ -129,6 +138,7 @@
   "cli": {
     "analytics": "7d5ad8f1-e51d-485d-b5c4-170b1115caa9",
     "schematicCollections": [
+      "@angular-eslint/schematics",
       "@cypress/schematic",
       "@schematics/angular"
     ]
