@@ -1,10 +1,17 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 import { PostWithContentKey, postKeys } from '../../types/post.interface';
 
 @Component({
   selector: 'app-post-card',
   standalone: true,
   imports: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './post-card.component.html',
   styleUrl: './post-card.component.scss',
 })

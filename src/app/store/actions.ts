@@ -5,8 +5,8 @@ export const postActions = createActionGroup({
   source: 'post',
   events: {
     GetPosts: emptyProps(),
-    'Get posts success': props<{ posts: PostInterface[] }>(),
-    'Get posts failure': emptyProps(),
+    GetPostsSuccess: props<{ posts: PostInterface[] }>(),
+    GetPostsFailure: emptyProps(),
     toggleContent: props<{ id: number }>(),
   },
 });
